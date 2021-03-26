@@ -29,13 +29,13 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/JS-A1-51095-WebGL.loader.js";
       var config = {
-        dataUrl: buildUrl + "/JS-A1-51095-WebGL.data.br",
-        frameworkUrl: buildUrl + "/JS-A1-51095-WebGL.framework.js.br",
-        codeUrl: buildUrl + "/JS-A1-51095-WebGL.wasm.br",
+        dataUrl: buildUrl + "/JS-A1-51095-WebGL.data.unityweb",
+        frameworkUrl: buildUrl + "/JS-A1-51095-WebGL.framework.js.unityweb",
+        codeUrl: buildUrl + "/JS-A1-51095-WebGL.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "JS-A1-51095",
-        productVersion: "1.0",
+        productVersion: "0.2.0",
       };
 
       var container = document.querySelector("#unity-container");
@@ -53,8 +53,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "1920px";
-        canvas.style.height = "1080px";
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
       }
       loadingBar.style.display = "block";
 
